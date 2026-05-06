@@ -1,0 +1,21 @@
+.auth-gradient {
+  background:
+    radial-gradient(circle at top left, rgba(255, 194, 102, 0.3), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(13, 148, 136, 0.24), transparent 30%),
+    linear-gradient(135deg, #f4efe5 0%, #f8fafc 52%, #e0f2fe 100%);
+}
+
+.metric-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.metric-card::after {
+  content: "";
+  position: absolute;
+  inset: auto -20% -35% auto;
+  width: 120px;
+  height: 120px;
+  border-radius: 999px;
+  background: rgba(15, 118, 110, 0.08);
+}
